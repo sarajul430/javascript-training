@@ -129,14 +129,12 @@ const findArticlesByAuthor1 = name => {
  * returns the updated articles */
 
 const deleteArticles = (author, arti ) => {
-    for (a of articles) {
+    for (a of arti) {
         if (a.author == author) {
-            a.author -= author
-        } else{
             articles.delete(a)
-        }
+        } 
     }
-    return author;
+    return arti;
 }
 
   
