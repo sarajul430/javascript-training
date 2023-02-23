@@ -70,18 +70,21 @@ let articles1 = {
     content : "Importance of cyber security",
     author : "Abi Tyas"
 }
+
 let articles2 = {
     articleId : 4,
     publishedDate : new Date(2022-01-25),
     content : "Modern CSS Explained",
     author : "Peter"
 }
+
 let articles3 = {
     articleId : 5,
     publishedDate : new Date(2023-02-15),
     content : "Basic Operations With a Set",
     author : "Shad"
 }
+
 let articles4 = {
     articleId : 7,
     publishedDate : new Date(2023-05-06),
@@ -128,13 +131,61 @@ const findArticlesByAuthor1 = name => {
  * deletes all the articles written by that author and 
  * returns the updated articles */
 
-const deleteArticles = (author, arti ) => {
-    for (a of arti) {
+const deleteArticles = (author, article ) => {
+    for (a of articles) {
         if (a.author == author) {
-            articles.delete(a)
+            article.delete(a)
         } 
     }
-    return arti;
+    return article;
 }
 
+/*  Create a function `deleteSensitiveArticles` 
+    that takes a sensitive word(string) as a parameter 
+    and the article set as a parameter, and deletes all 
+    the article that has that sensitive word */ 
+
+    // const deleteSensitiveArticles = (word, articleSet) => {
+    //     for (a of articleSet) {
+    //         let words = a.content.split(" ")
+    //         if (word.incl)
+    //         for (i = 0; i < words.length; i++) {
+    //             if (words[i] == sensitive) {
+    //                 articles.delete(a)
+
+    //             }
+    //         }
+    //     }
+    // }
+
+    const deleteSensitiveArticles1 = (word, articleSet) => {
+        for (a of articleSet){
+            let words = a.content.split(" ")
+            if(words.include(word)){
+                articleSet.delete(articles)
+            }
+
+        }
+        return articleSet;
+    }
   
+
+
+const convertToMap = articleSet => {
+    let mapOfArticles = new Map();
+    for(articles of articleSet){
+        if (mapOfArticles.has(articles.author)){
+            let arrayOfArticles = mapOfArticles.get(articles.author);
+            arrayOfArticles[arrayOfArticles.length] = articles
+            mapOfArticles.set(articles.author, arrayOfArticles)
+        } else {
+            mapOfArticles.set(articles.author, [articles])
+        }
+    }
+    return mapOfArticles;
+}
+
+convertToMap(articles)
+
+mapOfArticles.set(articles.author, mapOfArticles.get(articles.author) + 1)
+
