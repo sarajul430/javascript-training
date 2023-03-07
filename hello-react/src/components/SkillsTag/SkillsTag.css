@@ -1,0 +1,11 @@
+.skill {
+    display: inline-flex;
+    align-items: center;
+    color: #f2eeee;
+    border-radius: 4px;
+    background-color: #144859;
+    margin: 5px;
+    padding: 6px 10px;
+    border: 1px;   
+  }
+ 
