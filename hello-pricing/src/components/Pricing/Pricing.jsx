@@ -1,15 +1,15 @@
 import './Pricing.css';
 
-const Pricing = ({ image, tital, dollar, text }) => {
+const Pricing = ({ image, title, dollar, text }) => {
     return (
         <div className="Pricing">
 
             <img src={image} className="Pricing-image" alt="image" />
             <label className='pricing-option-label'>
-            <span>{tital}</span>
+            <span>{title}</span>
             </label>
             <h2>{dollar}</h2>
-            <p>{text}</p>  
+            <p>{text}</p> 
 
         </div>
     );
