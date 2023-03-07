@@ -1,0 +1,13 @@
+.features>img {
+    height: 15px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #7b4ae4;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -15px;
+}
