@@ -5,7 +5,7 @@ import App from './App';
 import pen from './pen.png';
 import arrow from './arrow.png';
 import Pricing from './components/Pricing/Pricing';
-import Features from './components/Features/Features';
+import Feature from './components/Feature/Feature';
 import Button from './components/Button/Button';
 
 import reportWebVitals from './reportWebVitals';
@@ -19,20 +19,20 @@ root.render(
     <section>
       <div className='pricing-options'><Pricing image={pen} title='STANDARD LOGO DESIGN' dollar='$500' text=' I desing the logo that reflects the identity of your brand in a professional and unique way. ' />
         <div className='feature'>
-          {featureInfos1.map((f, i) => <Features key={i} name={f} imgSource={arrow} />)}
+          {featureInfos1.map((f, i) => <Feature key={i} name={f} imgSource={arrow} />)}
         </div>
         <Button button='Click here to get started!' />
       </div>
       <div className='pricing-options highlighted-price'><Pricing image={pen} title='STANDARD LOGO DESIGN' dollar='$500' text=' I desing the logo that reflects the identity of your brand in a professional and unique way. ' />
         <div className='feature'>
-          {featureInfos2.map((f, i) => <Features key={i} name={f} imgSource={arrow} />)}
+          {featureInfos2.map((f, i) => <Feature key={i} name={f} imgSource={arrow} />)}
 
         </div>
         <div className='buy-button'><Button button='Click here to get started!' /></div>
       </div>
       <div className='pricing-options'><Pricing image={pen} title='STANDARD LOGO DESIGN' dollar='$500' text=' I desing the logo that reflects the identity of your brand in a professional and unique way. ' />
         <div className='feature'>
-          {featureInfos3.map((f, i) => <Features key={i} name={f} imgSource={arrow} />)}
+          {featureInfos3.map((f, i) => <Feature key={i} name={f} imgSource={arrow} />)}
         </div>
         <Button button='Click here to get started!' />
       </div>

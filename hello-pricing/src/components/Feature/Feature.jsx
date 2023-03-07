@@ -1,6 +1,6 @@
-import './Features.css';
+import './Feature.css';
 
-const Features = ({ name, imgSource}) => (
+const Feature = ({ name, imgSource}) => (
    
         <div className="features">
             <img src={imgSource} alt="" />
@@ -8,4 +8,4 @@ const Features = ({ name, imgSource}) => (
         </div>
   )
 
-export default Features;
+export default Feature;
