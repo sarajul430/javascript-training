@@ -1,3 +1,4 @@
+![After completed profile project looks like below image](assets/profile.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
